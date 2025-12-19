@@ -1,0 +1,89 @@
+.prediction-wrapper {
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.section-label {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+  color: #fff;
+}
+
+.section-label h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* Grid Layout untuk 2 Kartu */
+.cards-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Membagi 2 kolom sama rata */
+  gap: 2rem;
+}
+
+/* Style Kartu Putih */
+.white-card {
+  background-color: var(--color-card-bg);
+  border-radius: var(--radius-card);
+  padding: 5rem;
+  box-shadow: var(--shadow-card);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 100px;
+  transition: var(--transition-smooth);
+}
+
+.white-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-title {
+  color: var(--color-text-card);
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.price-main {
+  font-family: var(--font-mono);
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: var(--color-text-card);
+  margin-bottom: 1rem;
+  letter-spacing: -0.05em;
+}
+
+.price-sub {
+  font-size: 1rem;
+  color: #374151;
+  font-weight: 600;
+}
+
+.price-sub span {
+  font-family: var(--font-mono);
+}
+
+.sentiment-value {
+  font-family: var(--font-body);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-text-card);
+}
+
+.signal-text {
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+
+/* Responsive untuk Mobile */
+@media (max-width: 768px) {
+  .cards-grid { grid-template-columns: 1fr; } /* Jadi 1 kolom di HP */
+  .price-main { font-size: 1.8rem; }
+}

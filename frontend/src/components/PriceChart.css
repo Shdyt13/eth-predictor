@@ -1,0 +1,33 @@
+.chart-card {
+  background-color: var(--color-card-bg);
+  border-radius: var(--radius-card);
+  padding: 4rem;
+  box-shadow: var(--shadow-card);
+  height: 500px;
+  width: 100%;
+  position: relative;
+}
+
+.chart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.chart-title {
+  color: var(--color-text-card);
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.chart-source {
+  font-size: 1rem;
+  color: var(--color-text-muted);
+}
+
+.canvas-container {
+  width: 100%;
+  height: 340px; /* Tinggi fix agar grafik tidak gepeng */
+}
